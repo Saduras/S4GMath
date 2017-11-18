@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-public class Example : MonoBehaviour {
+public class ExampleDotProduct : MonoBehaviour {
 
     public Vector3 v;
     public Vector3 w;
