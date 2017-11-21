@@ -21,7 +21,9 @@ public static class GizmosUtil
 
 	public static void Draw3DArrow(Vector3 startPosition, Vector3 vector, Color color)
 	{
+		var oldColor = Gizmos.color;
 		Handles.color = color;
 		Handles.ArrowHandleCap(0, startPosition, Quaternion.LookRotation(vector), vector.magnitude, Event.current.type);
+		Gizmos.color = oldColor;
 	}
 }
